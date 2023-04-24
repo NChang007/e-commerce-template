@@ -1,0 +1,126 @@
+body {
+  margin: 0px;
+  padding: 0;
+}
+:root {
+  --text: #565360;
+  --label: #908e9b;
+  --disabled: #e1dfe9;
+}
+
+/* navbar =============== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-left{
+  display: flex;
+  align-items: center;
+}
+.nav-logo {
+  font-size: 30px;
+  margin: 1rem;
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-navigation {
+  display: flex;
+  list-style: none;
+  color: var(--text);
+}
+.nav-navigation:hover {
+  color: var(--disabled);
+}
+
+/* nav Item component =========== */
+.dropbtn {
+  border: 1px solid transparent;
+  margin: 5px 0.5rem
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 1rem;
+  justify-content: space-around;
+}
+.drop-content-left {
+  border-right: 1px solid var(--label);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+.drop-content-left div {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 0.7rem;
+}
+.drop-content-mid {
+  display: flex;
+  /* flex-direction: column; */
+  /* width: 400px; */
+  /* align-items: center; */
+  justify-content: center;
+}
+.drop-content-mid div {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 0.7rem;
+}
+.drop-content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.drop-content-right img {
+  width: 60%;
+}
+.drop-content-item {
+  margin-bottom: 0.3rem;
+  color: var(--text);
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  border: 1px solid transparent;
+  width: fit-content;
+}
+
+.drop-content-item:hover {
+  color: var(--text);
+  border-bottom: 1px solid #252525;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+.dropdown:hover .dropbtn {
+  cursor: pointer;
+  font-weight: 400;
+  color: var(--text);
+  border-bottom: 1px solid #252525;
+}
+.label {
+  color: var(--label);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+
+/* home page================= */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
