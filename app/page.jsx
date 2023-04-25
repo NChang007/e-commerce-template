@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+'use client'
 import placeholderImg1 from './images/placeholder_image_01.jpg'
 
 export default function Home() {

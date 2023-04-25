@@ -1,6 +1,8 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
 import NavItem from './NavItem'
+import LogReg from './LogReg'
 
 const Navbar = () => {
   return (
@@ -19,9 +21,9 @@ const Navbar = () => {
         </div> 
         <div className="nav-right">
             {/* login/register */}
-
+            <LogReg/>
             {/* search component */}
-
+            
             {/* cart */}
         </div>      
     </nav>

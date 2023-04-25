@@ -5,9 +5,9 @@ import Link from 'next/link'
 const NavItem = (props) => {
   let myContent
   if( props.type === 'women' ) {
-    myContent = <li class="dropdown">
-              <p class="dropbtn">{props.type.toUpperCase()}</p>
-              <div class="dropdown-content">
+    myContent = <li className="dropdown">
+              <p className="dropbtn">{props.type.toUpperCase()}</p>
+              <div className="dropdown-content">
                 <div className="drop-content-left">
                   <div>
                     <Link href='' className="drop-content-item label" >SHOP</Link>
@@ -79,54 +79,54 @@ const NavItem = (props) => {
               </div>
             </li> 
   }else if( props.type === 'men' ) {
-    myContent = <li class="dropdown">
-              <p class="dropbtn">{props.type.toUpperCase()}</p>
-              <div class="dropdown-content">
+    myContent = <li className="dropdown">
+              <p className="dropbtn">{props.type.toUpperCase()}</p>
+              <div className="dropdown-content">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
               </div>
             </li>
   }else if( props.type === 'designers' ) {
-    myContent = <li class="dropdown">
-              <p class="dropbtn">{props.type.toUpperCase()}</p>
-              <div class="dropdown-content">
+    myContent = <li className="dropdown">
+              <p className="dropbtn">{props.type.toUpperCase()}</p>
+              <div className="dropdown-content">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
               </div>
             </li>
   }else if( props.type === 'beauty' ) {
-    myContent = <li class="dropdown">
-              <p class="dropbtn">{props.type.toUpperCase()}</p>
-              <div class="dropdown-content">
+    myContent = <li className="dropdown">
+              <p className="dropbtn">{props.type.toUpperCase()}</p>
+              <div className="dropdown-content">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
               </div>
             </li>
   }else if( props.type === 'home' ) {
-    myContent = <li class="dropdown">
-              <p class="dropbtn">{props.type.toUpperCase()}</p>
-              <div class="dropdown-content">
+    myContent = <li className="dropdown">
+              <p className="dropbtn">{props.type.toUpperCase()}</p>
+              <div className="dropdown-content">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
               </div>
             </li>
   }else if( props.type === 'editorial' ) {
-    myContent = <li class="dropdown">
-              <p class="dropbtn">{props.type.toUpperCase()}</p>
-              <div class="dropdown-content">
+    myContent = <li className="dropdown">
+              <p className="dropbtn">{props.type.toUpperCase()}</p>
+              <div className="dropdown-content">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
               </div>
             </li>
   }else if( props.type === 'sale' ) {
-    myContent = <li class="dropdown">
-              <p class="dropbtn">{props.type.toUpperCase()}</p>
-              <div class="dropdown-content">
+    myContent = <li className="dropdown">
+              <p className="dropbtn">{props.type.toUpperCase()}</p>
+              <div className="dropdown-content">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
