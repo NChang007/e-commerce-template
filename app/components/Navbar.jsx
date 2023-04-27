@@ -3,6 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import NavItem from './NavItem'
 import LogReg from './LogReg'
+import Search from './Search'
 
 const Navbar = () => {
   return (
@@ -23,7 +24,7 @@ const Navbar = () => {
             {/* login/register */}
             <LogReg/>
             {/* search component */}
-            
+            <Search/>
             {/* cart */}
         </div>      
     </nav>

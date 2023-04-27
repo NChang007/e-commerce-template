@@ -8,7 +8,7 @@ body {
   --disabled: #e1dfe9;
 }
 
-/* navbar =============== */
+/* navbar ======================================================== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -17,6 +17,12 @@ body {
 .navbar-left{
   display: flex;
   align-items: center;
+}
+.nav-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0 0.5rem;
 }
 .nav-logo {
   font-size: 30px;
@@ -109,7 +115,7 @@ body {
   color: var(--text);
   border-bottom: 1px solid #252525;
 }
-.label {
+.nav-item-label {
   color: var(--label);
   font-size: 20px;
   font-weight: 400;
@@ -122,5 +128,49 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* padding-block: 1rem; */
 }
-
+.home-first-section {
+  width: 100%;
+  display: flex;
+}
+.first-section-image-container {
+  flex-grow: 1;
+}
+.first-section-image {
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
+}
+.first-section-image-text {
+  padding-inline: 2rem;
+}
+.first-section-image-text a {
+  text-decoration: none;
+  color: var(--text);
+}
+.first-section-image-text a:nth-last-child(1) {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.first-section-image-text a:hover {
+  border-bottom: 1px solid var(--text);
+}
+.home-second-section {
+  width: 100%;
+}
+.card-display {
+  margin: 0 auto;
+  width: 90%;
+  overflow-x: scroll; 
+  white-space: nowrap; 
+}
+.card {
+  width: 15em;
+  background-color: var(--label);
+  box-sizing: border-box;
+  display: inline-block;
+}
+/* .card-image {
+  width: 100%;
+} */

@@ -10,7 +10,7 @@ const NavItem = (props) => {
               <div className="dropdown-content">
                 <div className="drop-content-left">
                   <div>
-                    <Link href='' className="drop-content-item label" >SHOP</Link>
+                    <Link href='' className="drop-content-item nav-item-label" >SHOP</Link>
                     <Link href='' className="drop-content-item" >Vacation</Link>
                     <Link href='' className="drop-content-item" >Party & Evening</Link>
                     <Link href='' className="drop-content-item" >Webster Essentials</Link>
@@ -21,7 +21,7 @@ const NavItem = (props) => {
                 </div>
                 <div className="drop-content-mid">
                   <div>
-                    <Link href='' className="drop-content-item label" >CLOTHING</Link>
+                    <Link href='' className="drop-content-item nav-item-label" >CLOTHING</Link>
                     <Link href='' className="drop-content-item" >All Clothing</Link>
                     <Link href='' className="drop-content-item" >Swimwear</Link>
                     <Link href='' className="drop-content-item" >Jackets & Coats</Link>
@@ -34,7 +34,7 @@ const NavItem = (props) => {
                     <Link href='' className="drop-content-item" >Suits and Blazers</Link>
                   </div>
                   <div>
-                    <Link href='' className="drop-content-item label" >SHOES</Link>
+                    <Link href='' className="drop-content-item nav-item-label" >SHOES</Link>
                     <Link href='' className="drop-content-item" >All Shoes</Link>
                     <Link href='' className="drop-content-item" >Boots</Link>
                     <Link href='' className="drop-content-item" >Sandals</Link>
@@ -42,7 +42,7 @@ const NavItem = (props) => {
                     <Link href='' className="drop-content-item" >Heels</Link>
                   </div>
                   <div>
-                    <Link href='' className="drop-content-item label" >BAGS</Link>
+                    <Link href='' className="drop-content-item nav-item-label" >BAGS</Link>
                     <Link href='' className="drop-content-item" >All Bags</Link>
                     <Link href='' className="drop-content-item" >Clutches</Link>
                     <Link href='' className="drop-content-item" >Belt Bags</Link>
@@ -52,7 +52,7 @@ const NavItem = (props) => {
                     <Link href='' className="drop-content-item" >Shoulder Bags</Link>
                   </div>
                   <div>
-                    <Link href='' className="drop-content-item label" >ACCESSORIES</Link>
+                    <Link href='' className="drop-content-item nav-item-label" >ACCESSORIES</Link>
                     <Link href='' className="drop-content-item" >All Accessories</Link>
                     <Link href='' className="drop-content-item" >Belts</Link>
                     <Link href='' className="drop-content-item" >Hats & Scarves</Link>
@@ -62,7 +62,7 @@ const NavItem = (props) => {
                     <Link href='' className="drop-content-item" >More</Link>
                   </div>
                   <div>
-                    <Link href='' className="drop-content-item label" >JEWELRY</Link>
+                    <Link href='' className="drop-content-item nav-item-label" >JEWELRY</Link>
                     <Link href='' className="drop-content-item" >All Jewelry</Link>
                     <Link href='' className="drop-content-item" >Bracelets</Link>
                     <Link href='' className="drop-content-item" >Earrings</Link>

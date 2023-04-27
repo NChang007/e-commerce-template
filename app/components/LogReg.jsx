@@ -172,6 +172,7 @@ const LogReg = () => {
     <div className='logReg-container'>
         <button 
             id="logReg-btn"
+            style={{display: 'flex'}}
             onClick={(e) => openModal(e)}
         >
             <RxAvatar/>
