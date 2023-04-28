@@ -163,3 +163,74 @@ body {
   gap: 1rem;
   flex-wrap: wrap;
 }
+
+/* woman page might rename if code gets reused============== */
+.woman-page-header {
+  text-align: center;
+}
+/* the left side // the filters */
+.category-filter-container {
+  background-color: rgba(0,0,0,0.1);
+  width: 25%;
+}
+.active-filters {
+  display: block;
+}
+.active-filters-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--label);
+}
+.active-filters-body {
+  padding: 0.3rem;
+}
+
+/* .designer-filters {
+  
+} */
+.designer-filters-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--label);
+}
+.designer-filters-search {
+  display: flex;
+}
+.designer-filters-search-results {
+  padding: 0.3rem;
+}
+
+.category-filters-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--label);
+}
+.category-filters-body {
+  padding: 0.3rem;
+}
+
+.size-filters-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--label);
+}
+
+.color-filters-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--label);
+}
+
+.price-filters-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--label);
+}
+
+
+/* the right side of the page \\ diplay all 
+   items in cards with a load more items at the end
+*/
+.category-filter-results-container {
+  width: 75%;
+}

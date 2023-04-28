@@ -1,4 +1,5 @@
 import React from 'react'
+import PriceRangeBar from '../components/PriceRangeBar'
 
 const page = () => {
   return (
@@ -34,7 +35,7 @@ const page = () => {
                     </div>
                 </div>
                 <div className="category-filters">
-                    <div className="designer-filters-header">
+                    <div className="category-filters-header">
                         <p>DESIGNERS</p>
                         <p>-/+</p>
                     </div>
@@ -83,6 +84,7 @@ const page = () => {
                     </div>
                     <div className="price-filters-body">
                         {/* range slider componet to range a min and max price to filter */}
+                        <PriceRangeBar/>
                     </div>
                 </div>
                         

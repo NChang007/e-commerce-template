@@ -41,7 +41,7 @@ export default function Home() {
 
       <div className="home-fourth-section">
         <Link href={'/'}><p>BLOOM INTO SPRING: SHOP DRESSES</p></Link>
-        <Carousel id={'0'}>
+        <Carousel id={'1'}>
           <CarouselCard id={0}/>
           <CarouselCard id={1}/>
           <CarouselCard id={2}/>

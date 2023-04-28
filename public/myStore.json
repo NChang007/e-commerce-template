@@ -8,6 +8,7 @@
                 "category": "clothing",
                 "subCatergory": "Beachwear || Dress || Jackets & Coats || Pants || Shorts || Skirts || Tops || Blazers || Jeans || Leisurewear || Knitwear",
                 "color":"blue",
+                "size": ["s","m","l","xl","fr12"],
                 "images": ["links to images"],
                 "description":"SomeDescription"
             }
@@ -20,6 +21,7 @@
                 "category": "Shoes",
                 "subCatergory": "Boots || Flats || Sneakers || Heels || Sandals",
                 "color":"blue",
+                "size": ["s","m","l","xl","fr12"],
                 "images": ["links to images"],
                 "description":"SomeDescription"
             }
@@ -32,6 +34,7 @@
                 "category": "Bags",
                 "subCatergory": "Belt Bags || Clutches || Crossbody || Handbags || Shoulder Bags || Tote Bags",
                 "color":"blue",
+                "size": ["s","m","l","xl","fr12"],
                 "images": ["links to images"],
                 "description":"SomeDescription"
             }
@@ -44,6 +47,7 @@
                 "category": "Accessories",
                 "subCatergory": "Belts || Hats || Scarves || Socks/Tights || Sunglasses || Wallets || More",
                 "color":"blue",
+                "size": ["s","m","l","xl","fr12"],
                 "images": ["links to images"],
                 "description":"SomeDescription"
             }
@@ -56,6 +60,7 @@
                 "category": "Jewelry",
                 "subCatergory": "Bracelets || Charms || Errings || Fine Jewelry || Necklaces || Rigs || Watches",
                 "color":"blue",
+                "size": ["s","m","l","xl","fr12"],
                 "images": ["links to images"],
                 "description":"SomeDescription"
             }

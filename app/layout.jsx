@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'template',
+  title: 'Template',
   description: 'ecomers site template full stack',
 }
 
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        {children}
+          {children}
         <Footer />
       </body>
     </html>
