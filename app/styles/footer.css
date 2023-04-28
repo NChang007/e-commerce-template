@@ -1,0 +1,20 @@
+.footer-container {
+    background-color: var(--disabled);
+    color: var(--text);
+    text-align: center;
+    width: 100%;
+  
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--text);
+}
+  
+.rights-reserved {
+    margin: 0;
+    padding: 1rem;
+}
+.footer-label {
+    color: var(--label);
+}

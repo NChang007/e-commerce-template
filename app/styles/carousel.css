@@ -1,0 +1,119 @@
+.carousel-container {
+    width: 90%;
+    display: flex;
+    /* gap: 1rem; */
+    /* overflow-x: scroll; */
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+.carousel-content {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap; 
+    scroll-behavior: smooth;
+    padding-block: 1rem;
+}
+.carousel-left-btn {
+    position: absolute;
+    left: 0;
+    padding: 1rem;
+    /* background-color: white; */
+    backdrop-filter: blur(5px);
+    color: var(--disabled);
+    font-size: 2rem;
+}
+.carousel-right-btn {
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+    /* background: white; */
+    backdrop-filter: blur(5px);
+    color: var(--disabled);
+    font-size: 2rem;
+}
+.carousel-left-btn:hover, .carousel-left-btn span:hover{
+    cursor: pointer;
+}
+.carousel-right-btn:hover, .carousel-right-btn span:hover {
+    cursor: pointer;
+}
+
+
+/* carousel card============================ */
+.card {
+    width: 15em;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-inline: 0.5rem;
+}
+.card:hover {
+    box-shadow: 0 0 5px 5px var(--label);
+}
+/* .card-image {
+    width: 100%;
+} */
+.card-text-container {
+    height: 200px;
+    position: relative;
+}
+.card-text {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    opacity: 1;
+    flex-direction: column;
+    align-items: center;
+    white-space: break-spaces;
+    text-align: center;
+}
+.card-text p {
+    margin: 0.3rem 0;
+}
+.card-text-label {
+    color: var(--text);
+}
+.card-text-description {
+    color: var(--label);
+}
+.card-text-price {
+    color: var(--text);
+}
+.card-text-hidden {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+}
+/* .card-text-hidden:hover {
+    display: flex;
+} */
+.card-add-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.add-options-item {
+    padding: 5px;
+    background-color: var(--disabled);
+    border: 1px solid transparent;
+}
+.add-options-item:hover {
+    border: 1px solid var(--text);
+}
+
+.hidden {
+    /* display: none; */
+    opacity: 0;
+
+}
+.notHidden {
+    /* display: flex; */
+    opacity: 1;
+}

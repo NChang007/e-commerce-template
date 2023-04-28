@@ -1,60 +1,62 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import PlaceholderImg2 from '../public/images/placeholder_image_02.jpg'
-import PlaceholderImg3 from '../public/images/placeholder_image_03.jpg'
+import ImageLinkCard from './components/ImageLinkCard'
+import CarouselCard from './components/CarouselCard'
+import Carousel from './components/Carousel'
 
 export default function Home() {
+
   return (
     <div className='home-container'>
       {/* FIRST SECTION */}
       <div className="home-first-section">
-        <div className='first-section-image-container'>
-          <Link href={'/'}>
-            <Image className='first-section-image' src={PlaceholderImg2} alt="Placeholder image" />
-          </Link>
-          <div className='first-section-image-text'>
-            <Link href={'/'}>
-              <p>WOMEN'S NEW ARRIVALS</p>
-            </Link>
-            <Link href={'/'}>
-              <p>NEW SPRING ATTITUDE</p>
-            </Link>
-          </div>
-        </div>
-        <div className='first-section-image-container'>
-          <Link href={'/'}>
-            <Image className='first-section-image' src={PlaceholderImg3} alt="Placeholder image" />
-          </Link>
-          <div className='first-section-image-text'>
-            <Link href={'/'}>
-              <p>MEN'S NEW ARRIVALS</p>
-            </Link>
-            <Link href={'/'}>
-              <p>NEW SPRING ATTITUDE</p>
-            </Link>
-          </div>
-        </div>
+        <ImageLinkCard/>
+        <ImageLinkCard/>
       </div>
 
       {/* SECOND SECTION */}
       <div className="home-second-section">
         <Link href={'/'}><p>BLOOM INTO SPRING: SHOP DRESSES</p></Link>
-        <div className='card-display'>
-          <div className="card">
-            <Image 
-              className='card-image' 
-              src={'https://images.pexels.com/photos/2235071/pexels-photo-2235071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
-              alt='This is a place holder image'
-              width={500}
-              height={500}
-              style={{width:'100%', height:'17em', objectFit:'cover'}}
-            />
-          </div>
-        </div>
+        <Carousel id={'0'}>
+          <CarouselCard id={0}/>
+          <CarouselCard id={1}/>
+          <CarouselCard id={2}/>
+          <CarouselCard id={3}/>
+          <CarouselCard id={4}/>
+          <CarouselCard id={5}/>
+          <CarouselCard id={6}/>
+        </Carousel>
+      </div>
+      
+      {/* third section */}
+      <div className="home-third-section">
+        <ImageLinkCard height={'30rem'}/>
+        <ImageLinkCard height={'30rem'}/>
+        <ImageLinkCard height={'30rem'}/>
+        <ImageLinkCard height={'30rem'}/>
+        <ImageLinkCard height={'30rem'}/>
+        <ImageLinkCard height={'30rem'}/>
       </div>
 
+      <div className="home-fourth-section">
+        <Link href={'/'}><p>BLOOM INTO SPRING: SHOP DRESSES</p></Link>
+        <Carousel id={'0'}>
+          <CarouselCard id={0}/>
+          <CarouselCard id={1}/>
+          <CarouselCard id={2}/>
+          <CarouselCard id={3}/>
+          <CarouselCard id={4}/>
+          <CarouselCard id={5}/>
+          <CarouselCard id={6}/>
+        </Carousel>
+      </div>
 
-    </div>
+      <div className="home-fith-section">
+        <ImageLinkCard />
+        <ImageLinkCard />
+      </div>
+
+    </div> 
   )
 }
