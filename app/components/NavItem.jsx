@@ -6,7 +6,7 @@ const NavItem = (props) => {
   let myContent
   if( props.type === 'women' ) {
     myContent = <li className="dropdown">
-              <p className="dropbtn">{props.type.toUpperCase()}</p>
+              <Link href={'/women'} className="dropbtn">{props.type.toUpperCase()}</Link>
               <div className="dropdown-content">
                 <div className="drop-content-left">
                   <div>

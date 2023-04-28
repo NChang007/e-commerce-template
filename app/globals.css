@@ -42,11 +42,15 @@ body {
 /* nav Item component =========== */
 .dropbtn {
   border: 1px solid transparent;
-  margin: 5px 0.5rem
+  margin: 5px 0.5rem;
+  color: var(--label);
+  text-decoration: none;
+  display: block;
 }
 .dropdown {
   position: relative;
   display: inline-block;
+
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {

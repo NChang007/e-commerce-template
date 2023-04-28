@@ -1,0 +1,69 @@
+{
+    "woman":{
+        "clothing":[
+            {
+                "name": "SomeName",
+                "brand": "BrandName",
+                "price": "$1123",
+                "category": "clothing",
+                "subCatergory": "Beachwear || Dress || Jackets & Coats || Pants || Shorts || Skirts || Tops || Blazers || Jeans || Leisurewear || Knitwear",
+                "color":"blue",
+                "images": ["links to images"],
+                "description":"SomeDescription"
+            }
+        ],
+        "shoes":[
+            {
+                "name": "SomeName",
+                "brand": "BrandName",
+                "price": "$1123",
+                "category": "Shoes",
+                "subCatergory": "Boots || Flats || Sneakers || Heels || Sandals",
+                "color":"blue",
+                "images": ["links to images"],
+                "description":"SomeDescription"
+            }
+        ],
+        "bags":[
+            {
+                "name": "SomeName",
+                "brand": "BrandName",
+                "price": "$1123",
+                "category": "Bags",
+                "subCatergory": "Belt Bags || Clutches || Crossbody || Handbags || Shoulder Bags || Tote Bags",
+                "color":"blue",
+                "images": ["links to images"],
+                "description":"SomeDescription"
+            }
+        ],
+        "accessories":[
+            {
+                "name": "SomeName",
+                "brand": "BrandName",
+                "price": "$1123",
+                "category": "Accessories",
+                "subCatergory": "Belts || Hats || Scarves || Socks/Tights || Sunglasses || Wallets || More",
+                "color":"blue",
+                "images": ["links to images"],
+                "description":"SomeDescription"
+            }
+        ],
+        "jewelry":[
+            {
+                "name": "SomeName",
+                "brand": "BrandName",
+                "price": "$1123",
+                "category": "Jewelry",
+                "subCatergory": "Bracelets || Charms || Errings || Fine Jewelry || Necklaces || Rigs || Watches",
+                "color":"blue",
+                "images": ["links to images"],
+                "description":"SomeDescription"
+            }
+        ]
+
+    },
+    "men":{
+
+    }
+    
+}
