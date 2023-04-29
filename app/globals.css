@@ -193,6 +193,9 @@ body {
   justify-content: space-between;
   border-bottom: 1px solid var(--label);
 }
+.designer-filters-body {
+  display: none;
+}
 .designer-filters-search {
   display: flex;
 }
@@ -206,6 +209,7 @@ body {
   border-bottom: 1px solid var(--label);
 }
 .category-filters-body {
+  display: none;
   padding: 0.3rem;
 }
 
@@ -214,11 +218,17 @@ body {
   justify-content: space-between;
   border-bottom: 1px solid var(--label);
 }
+.size-filters-body {
+  display: none;
+}
 
 .color-filters-header {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--label);
+}
+.color-filters-body {
+  display: none;
 }
 
 .price-filters-header {
@@ -226,7 +236,48 @@ body {
   justify-content: space-between;
   border-bottom: 1px solid var(--label);
 }
+.price-filters-body {
+  display: none;
+}
 
+/* all open/close icon css */
+.designer-plus {
+  display: block;
+}
+.designer-minus {
+  display: none;
+}
+.category-plus {
+  display: block;
+}
+.category-minus {
+  display: none;
+}
+.size-plus {
+  display: block;
+}
+.size-minus {
+  display: none;
+}
+.color-plus {
+  display: block;
+}
+.color-minus {
+  display: none;
+}
+.price-plus {
+  display: block;
+}
+.price-minus {
+  display: none;
+}
+
+.close-filters {
+  display: none;
+}
+.open-filters {
+  display: block;
+}
 
 /* the right side of the page \\ diplay all 
    items in cards with a load more items at the end

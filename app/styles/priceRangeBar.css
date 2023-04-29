@@ -1,78 +1,168 @@
-.range_container {
+:root {
+    --SLICE-WIDTH: 13rem;
+    --THUMB-COLOR: darkcyan;
+    --THUMB-SIZE: 19px;
+}
+
+.container {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin: 35% auto;
+    align-items: center;
+    padding: 2rem 0rem;
 }
 
-.sliders_control {
-    position: relative;
-    min-height: 50px;
-}
-
-.form_control {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    font-size: 24px;
-    color: #635a5a;
-}
-
-input[type=range]::-webkit-slider-thumb {
+/* Removing the default appearance */
+.thumb,
+.thumb::-webkit-slider-thumb {
     -webkit-appearance: none;
-    pointer-events: all;
-    width: 24px;
-    height: 24px;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px #C6C6C6;
-    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
-input[type=range]::-moz-range-thumb {
-    -webkit-appearance: none;
-    pointer-events: all;
-    width: 24px;
-    height: 24px;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px #C6C6C6;
-    cursor: pointer;  
+.thumb:focus {
+    outline: none;
 }
 
-input[type=range]::-webkit-slider-thumb:hover {
-    background: #f7f7f7;
-}
-
-input[type=range]::-webkit-slider-thumb:active {
-    box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
-    -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
-}
-
-input[type="number"] {
-    color: #8a8383;
-    width: 50px;
-    height: 30px;
-    font-size: 20px;
-    border: none;
-}
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {  
-    opacity: 1;
-}
-
-input[type="range"] {
-    -webkit-appearance: none; 
-    appearance: none;
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    background-color: #C6C6C6;
+.thumb {
     pointer-events: none;
+    position: absolute;
+    height: 0px;
+    width: var(--SLICE-WIDTH);
 }
 
-#fromSlider {
-    height: 0;
+.thumb--left {
+    z-index: 3;
+}
+
+.thumb--right {
+    z-index: 4;
+}
+
+/* For Chrome browsers */
+.thumb::-webkit-slider-thumb {
+    background-color: var(--text);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: var(--THUMB-SIZE);
+    width: var(--THUMB-SIZE);
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+}
+
+/* For Firefox browsers */
+.thumb::-moz-range-thumb {
+    background-color: var(--text);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: var(--THUMB-SIZE);
+    width: var(--THUMB-SIZE);
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    width: calc(var(--SLICE-WIDTH) - 5px);
+    margin-left: 2px;
+}
+
+.slider-track,
+.slider-range {
+    position: absolute;
+    top: 0px; /* Here you move the slice up or down only on any browser that is not firefox */
+}
+
+@supports (-moz-appearance: none) {
+/* This check if the browser is firefox */
+.slider-track,
+.slider-range {
+    top: 0px; /* Here you move the slice up or down only on firefox browser */
+}
+}
+
+.slider-track,
+.slider-range {
+    border-radius: 3px;
+    height: 5px; /* Here you define the height of the slice */
+}
+
+.slider-track {
+    background-color: hsl(205, 25%, 75%);
+    width: 100%;
     z-index: 1;
+}
+
+.slider-range {
+    background-color: var(--text);
+    z-index: 2;
+}
+
+/* .slider__left-value,
+.slider__right-value {
+    color: cornflowerblue;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.slider__left-value {
+    left: 6px;
+}
+
+.slider__right-value {
+    right: -4px;
+} */
+
+.values {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    /* width: var(--SLICE-WIDTH); */
+    flex-wrap: wrap;
+}
+.values div input {
+    border: none;
+    width: 5rem;
+    padding: 0.5rem;
+    border-radius: 0.356rem;
+    padding-left: 1rem;
+}
+.values-min-input {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+.values-min-input::before {
+    content: 'From :';
+    color: var(--text);
+}
+.values-min-input::after {
+    content: '$';
+    color: var(--text);
+    position: absolute;
+    left: 57px;
+}
+.values-max-input {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+.values-max-input::before {
+    content: 'To :';
+    color: var(--text);
+}
+.values-max-input::after {
+    content: '$';
+    color: var(--text);
+    position: absolute;
+    left: 37px;
 }
