@@ -1,22 +1,20 @@
-'use client'
 import React from 'react'
-import '../styles/carousel.css'
 import Image from 'next/image'
+import '../styles/QuickAddCards.css'
 
-const CauroselCard = (props) => {
-  let id = props.id
-  const cardHover = (id) => {
-    let cardText = document.getElementById(`card-text${id}`)
-    let cardTextHidden = document.getElementById(`card-text-hidden${id}`)
-    if (cardText.classList.contains('hidden')){
-      cardText.classList.remove('hidden')
-      cardTextHidden.classList.remove('notHidden')
-    }else {
-      cardText.classList.add('hidden')
-      cardTextHidden.classList.add('notHidden')
+const QuickAddCards = (props) => {
+    let id = props.id
+    const cardHover = (id) => {
+        let cardText = document.getElementById(`card-text${id}`)
+        let cardTextHidden = document.getElementById(`card-text-hidden${id}`)
+        if (cardText.classList.contains('hidden')){
+          cardText.classList.remove('hidden')
+          cardTextHidden.classList.remove('notHidden')
+        }else {
+          cardText.classList.add('hidden')
+          cardTextHidden.classList.add('notHidden')
+        }
     }
-  }
-
   return (
     <div className="card" onMouseEnter={() => cardHover(id)} onMouseLeave={() => cardHover(id)}>
         <Image 
@@ -53,4 +51,4 @@ const CauroselCard = (props) => {
   )
 }
 
-export default CauroselCard
+export default QuickAddCards

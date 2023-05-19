@@ -168,10 +168,16 @@ body {
 .woman-page-header {
   text-align: center;
 }
+.woman-page-body {
+  display: flex;
+  justify-content: center;
+  padding-block: 1rem;
+}
 /* the left side // the filters */
 .category-filter-container {
-  background-color: rgba(0,0,0,0.1);
+  /* background-color: rgba(0,0,0,0.1); */
   width: 25%;
+  padding-inline-start: 1.8rem;
 }
 .active-filters {
   display: block;
@@ -284,4 +290,10 @@ body {
 */
 .category-filter-results-container {
   width: 75%;
+  padding-inline-start: 1.7rem;
+}
+.filter-results-card-container {
+  display: flex;
+  gap: 2.56rem;
+  flex-wrap: wrap;
 }

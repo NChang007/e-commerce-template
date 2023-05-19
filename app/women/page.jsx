@@ -2,8 +2,12 @@
 import React, { useContext, useEffect, useState } from 'react'
 import PriceRangeBar from '../components/PriceRangeBar'
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai'
+import QuickAddCards from '../components/QuickAddCards'
+import { Context } from '../context/appContext'
 
 const page = () => {
+    const {store, actions}= useContext(Context)
+    console.log(store.msg)
     const [openActiveFilters, setOpenActiveFilters] = useState(false)
     const [openDesignerFilters, setOpenDesignerFilters] = useState(false)
     const [openCategoryFilters, setOpenCategoryFilters] = useState(false)
@@ -23,7 +27,7 @@ const page = () => {
         }else if(filter === 'color'){
             checkFilter = openColorFilters
         }else{checkFilter = openPriceFilters}
-        console.log(`open${filter}Filters`, )
+        // console.log(`open${filter}Filters`, )
         if (checkFilter) {
             console.log()
             document.querySelector(`.${currentFilter}-filters-body`).classList.add('open-filters')
@@ -44,13 +48,13 @@ const page = () => {
         openCloseFilters('price')
 
     }, [openActiveFilters, openCategoryFilters, openColorFilters, openDesignerFilters, openSizeFilters, openPriceFilters])
-
+    let contentArr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
   return (
     <div className='woman-page'>
-        <div className="woman-page-header">
+        <header className="woman-page-header">
             <p>this is some header that will update </p> 
-        </div>
-        <div className="woman-page-body">
+        </header>
+        <main className="woman-page-body">
             {/* left side of the page with all filters  */}
             <div className="category-filter-container">
                 <div className="active-filters">
@@ -175,8 +179,15 @@ const page = () => {
             {/* right side of the page with all results based on filters if any */}
             <div className="category-filter-results-container">
                 {/* return items as card with quick add || updates when filters are applied  */}
+                <div className='filter-results-card-container'>
+                    {
+                        contentArr.map((item, idx) => {
+                            return <QuickAddCards  key={idx} id={idx}/>
+                        })
+                    }
+                </div>
             </div>
-        </div>
+        </main>
     </div>
   )
 }

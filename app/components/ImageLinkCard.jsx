@@ -9,7 +9,12 @@ const ImageLinkCard = (props) => {
   return (
     <div className='image-link-container'>
         <Link href={'/'}>
-            <Image className='image-link-image' style={{height: `${props.height}`}} src={PlaceholderImg2} alt="Placeholder image" />
+            <Image 
+                className='image-link-image' 
+                style={{height: `${props.height}`}} 
+                src={PlaceholderImg2} 
+                alt="Placeholder image" 
+            />
         </Link>
         <div className='image-link-text'>
             <Link href={'/'}>
