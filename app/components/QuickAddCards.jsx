@@ -45,6 +45,8 @@ const QuickAddCards = (props) => {
                 <div className='add-options-item'>FR46</div>
                 <div className='add-options-item'>FR48</div>
               </div>
+              <button className='qac-btn'>ADD TO CART</button>
+              <p className='card-text-hidden-price'>$1,035</p>
           </div>
         </div>
     </div>

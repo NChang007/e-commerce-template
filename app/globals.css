@@ -1,11 +1,14 @@
 body {
   margin: 0px;
   padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 :root {
   --text: #565360;
   --label: #908e9b;
   --disabled: #e1dfe9;
+  --highlight: #3cc47c;
+  --highlight-dim: #309e63;
 }
 
 /* navbar ======================================================== */
@@ -13,6 +16,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid var(--disabled);
 }
 .navbar-left{
   display: flex;
@@ -167,6 +171,7 @@ body {
 /* woman page might rename if code gets reused============== */
 .woman-page-header {
   text-align: center;
+  margin-block: 0.7rem;
 }
 .woman-page-body {
   display: flex;
@@ -292,8 +297,31 @@ body {
   width: 75%;
   padding-inline-start: 1.7rem;
 }
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--label);
+  margin-block-end: 0.356rem;
+}
 .filter-results-card-container {
   display: flex;
   gap: 2.56rem;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-link {
+  text-decoration: none;
+  color: var(--disabled);
+}
+.header-link:hover {
+  color: var(--label);
+}
+.header-link-span{
+  color: var(--disabled);
+}
+.header-text {
+  font-size: 2rem;
+  color: var(--text);
+  margin: 0;
 }

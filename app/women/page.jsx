@@ -3,11 +3,12 @@ import React, { useContext, useEffect, useState } from 'react'
 import PriceRangeBar from '../components/PriceRangeBar'
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai'
 import QuickAddCards from '../components/QuickAddCards'
-import { Context } from '../context/appContext'
+// import { Context } from '../context/appContext'
+import Link from 'next/link'
 
 const page = () => {
-    const {store, actions}= useContext(Context)
-    console.log(store.msg)
+    // const {store, actions}= useContext(Context)
+    // console.log(store.msg)
     const [openActiveFilters, setOpenActiveFilters] = useState(false)
     const [openDesignerFilters, setOpenDesignerFilters] = useState(false)
     const [openCategoryFilters, setOpenCategoryFilters] = useState(false)
@@ -52,7 +53,8 @@ const page = () => {
   return (
     <div className='woman-page'>
         <header className="woman-page-header">
-            <p>this is some header that will update </p> 
+            <span className='header-link-span'><Link href={'/'} className='header-link'>Home</Link> &gt; <Link href={'/women'} className='header-link' >Woman</Link></span>
+            <p className='header-text'>Women's Clothing & Accessories </p> 
         </header>
         <main className="woman-page-body">
             {/* left side of the page with all filters  */}
@@ -179,6 +181,16 @@ const page = () => {
             {/* right side of the page with all results based on filters if any */}
             <div className="category-filter-results-container">
                 {/* return items as card with quick add || updates when filters are applied  */}
+                <div className='results-header'>
+                    <p style={{fontWeight: '500'}}>{contentArr.length} ITEMS</p>
+                    <div style={{display: 'flex', gap: '1rem'}}>
+                        <p style={{fontWeight: '500'}}>SORT BY:</p>
+                        <p>Newest</p>
+                        <p>Price Low-High</p>
+                        <p>Price High-Low</p>
+                        <p>Discount</p>
+                    </div>
+                </div>
                 <div className='filter-results-card-container'>
                     {
                         contentArr.map((item, idx) => {
