@@ -17,7 +17,7 @@ const Navbar = () => {
                 <NavItem  type={'beauty'} />
                 <NavItem  type={'home'} />
                 <NavItem  type={'editorial'} />
-                <NavItem  type={'sale'} />
+                <NavItem  type={'sale'} id='nav-sales-tab' />
             </ul>
         </div> 
         <div className="nav-right">

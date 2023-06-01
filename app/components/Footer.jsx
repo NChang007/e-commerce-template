@@ -6,7 +6,7 @@ import { AiOutlineInstagram, AiOutlineTwitter, AiOutlineYoutube } from 'react-ic
 
 const Footer = () => {
   return (
-    <div className='footer-container'>
+    <footer className='footer-container'>
         <div className='footer-content'>
             <div>
                 <p className='footer-label'>About The Webster</p>
@@ -42,7 +42,7 @@ const Footer = () => {
 
             <div>
                 <div className="socials-container">
-                    <p>SOCIALS</p>
+                    <p className='footer-label'>SOCIALS</p>
                     <div className="socials">
                         <Link href={'/'}><AiOutlineInstagram/></Link>
                         <Link href={'/'}><AiOutlineTwitter/></Link>
@@ -59,9 +59,8 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        
         <p className='rights-reserved'>© 2023 The TEMPLATE. All Rights Reserved.</p>
-    </div>
+    </footer>
   )
 }
 

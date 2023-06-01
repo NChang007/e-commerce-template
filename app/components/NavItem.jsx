@@ -125,7 +125,7 @@ const NavItem = (props) => {
             </li>
   }else if( props.type === 'sale' ) {
     myContent = <li className="dropdown">
-              <p className="dropbtn">{props.type.toUpperCase()}</p>
+              <p className="dropbtn" style={{color: '#3cc47c'}}>{props.type.toUpperCase()}</p>
               <div className="dropdown-content">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>

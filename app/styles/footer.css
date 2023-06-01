@@ -3,18 +3,30 @@
     color: var(--text);
     text-align: center;
     width: 100%;
-  
+
 }
 .footer-content {
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid var(--text);
 }
-  
+.socials a svg {
+    color: var(--highlight);
+    font-size: 1.5rem;
+}
+.socials a svg:hover {
+    color: var(--highlight-dim);
+}
 .rights-reserved {
     margin: 0;
     padding: 1rem;
 }
 .footer-label {
     color: var(--label);
+}
+.socials-container {
+    text-align: start;
+}
+.mailList-container {
+    
 }

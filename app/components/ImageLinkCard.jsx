@@ -8,20 +8,22 @@ import '../styles/imageLinkCard.css'
 const ImageLinkCard = (props) => {
   return (
     <div className='image-link-container'>
-        <Link href={'/'}>
+        <Link href={props.cardLink}>
             <Image 
                 className='image-link-image' 
                 style={{height: `${props.height}`}} 
-                src={PlaceholderImg2} 
+                width='500'
+                height='500'
+                src={props.imageSrc} 
                 alt="Placeholder image" 
             />
         </Link>
         <div className='image-link-text'>
-            <Link href={'/'}>
-                <p>WOMEN'S NEW ARRIVALS</p>
+            <Link href={props.cardLink}>
+                <p>{props.title.toUpperCase()}</p>
             </Link>
-            <Link href={'/'}>
-                <p>NEW SPRING ATTITUDE</p>
+            <Link href={props.cardLink}>
+                <p>{props.subTitle.toUpperCase()}</p>
             </Link>
         </div>
     </div>
