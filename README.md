@@ -16,7 +16,7 @@
 # Installation
 
   1. Clone the repository: git clone https://github.com/NChang007/e-commerce-template.git
-  2. Navigate to the project directory: cd TEMPLATE
+  2. Navigate to the project directory: cd e-commerce-template
   3. Install dependencies: npm install
   4. Configure app settings, database connections, and payment gateways in the appropriate files.
   5. Launch the app: npm run dev
