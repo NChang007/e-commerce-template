@@ -1,5 +1,5 @@
 .navbarBot {
-    display: flex;
+    display: none;
     justify-content: center;
     gap: 1rem;
     padding: .17rem;
@@ -15,4 +15,10 @@
     font-size: 1.5rem;
     list-style: none;
     color: var(--text);
+}
+
+@media (max-width: 600px) {
+    .navbarBot {
+        display: flex;
+    }
 }
