@@ -23,6 +23,7 @@ a:hover{
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--disabled);
+  position: relative;
 }
 .navbar-left{
   display: flex;
@@ -48,7 +49,37 @@ a:hover{
 .nav-navigation:hover {
   color: var(--disabled);
 }
-
+.navigation-control {
+  display: none;
+}
+@media (max-width : 600px) {
+  .nav-right {
+    display: none;
+  }
+  .navigation-control {
+    display: flex;
+  }
+  .nav-navigation-wrapper {
+    display: none;
+    background-color: white;
+    /* flex-direction: column; */
+    position: absolute;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 53px;
+  }
+  .nav-navigation {
+    margin: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .dropdown {
+    width: min-content;
+  }
+}
 /* nav Item component =========== */
 .dropbtn {
   border: 1px solid transparent;
@@ -156,6 +187,7 @@ a:hover{
 .home-first-section {
   width: 100%;
   display: flex;
+  justify-content: center;
 }
 .home-second-section {
   width: 100%;
@@ -168,6 +200,7 @@ a:hover{
   width: 100%;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .home-fourth-section {
   width: 100%;
@@ -181,6 +214,7 @@ a:hover{
   width: 100%;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* woman page might rename if code gets reused============== */
@@ -339,4 +373,11 @@ a:hover{
   font-size: 2rem;
   color: var(--text);
   margin: 0;
+}
+
+
+
+
+.d-flex {
+  display: flex !important;
 }

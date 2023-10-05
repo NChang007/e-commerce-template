@@ -7,7 +7,7 @@ import '../styles/imageLinkCard.css'
 
 const ImageLinkCard = (props) => {
   return (
-    <div className='image-link-container'>
+    <div className='image-link-container' style={{flexGrow: `${props.flexGrow}`}} >
         <Link href={props.cardLink}>
             <Image 
                 className='image-link-image' 

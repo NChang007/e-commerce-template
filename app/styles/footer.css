@@ -25,8 +25,44 @@
     color: var(--label);
 }
 .socials-container {
-    text-align: start;
+    text-align: center;
 }
 .mailList-container {
-    
+    width: 180px;
+    text-align: justify;
+}
+.mailList-container p {
+    text-align: center;
+}
+.mailList-container div {
+    margin-block: 2rem;
+    display: flex;
+}
+.mailList-btn {
+    /* margin-top: 0.3rem; */
+    border: 1px solid var(--highlight);
+    color: var(--text);
+    /* padding: 0.3rem; */
+    /* font-size: large; */
+    background-color: transparent;
+    transition: all 1s;
+}
+.mailList-btn:is(:hover, :active){
+    border: 1px solid var(--highlight-dim);
+    background-color: var(--highlight-dim);
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .mailList-container {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1rem;
+    }
+    .mailList-container div {
+        justify-content: center;
+    }
 }

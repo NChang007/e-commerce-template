@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import injectContext from './context/appContext'
+import NavbarBot from './components/NavbarBot'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -18,6 +19,7 @@ function RootLayout({ children }) {
         <Navbar />
           {children}
         <Footer />
+        <NavbarBot />
       </body>
     </html>
   )

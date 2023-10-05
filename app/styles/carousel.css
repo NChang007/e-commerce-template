@@ -102,9 +102,25 @@
     padding: 5px;
     background-color: var(--disabled);
     border: 1px solid transparent;
+    min-width: 35px;
 }
 .add-options-item:hover {
     border: 1px solid var(--text);
+}
+
+.quickAdd-btn {
+    margin-top: 0.3rem;
+    border: 1px solid var(--highlight);
+    color: var(--text);
+    padding: 0.3rem;
+    font-size: large;
+    background-color: transparent;
+    transition: all 1s;
+}
+.quickAdd-btn:is(:hover, :active){
+    border: 1px solid var(--highlight-dim);
+    background-color: var(--highlight-dim);
+    color: white;
 }
 
 .hidden {

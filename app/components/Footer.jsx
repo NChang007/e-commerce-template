@@ -37,7 +37,7 @@ const Footer = () => {
                 <p>Privacy Policy</p>
                 <p>Accessibility Statement</p>
                 <p>Contact Digital Stylist</p>
-                <p>Loyalty - The Webster Elit</p>
+                <p>Loyalty - The Template Elit</p>
             </div>
 
             <div>
@@ -52,8 +52,8 @@ const Footer = () => {
                 <div className="mailList-container">
                     <p>Join out mailing List</p>
                     <div>
-                        <input type="email" />
-                        <button>JOIN</button>
+                        <input type="email"  placeholder='Enter your EMAIL'/>
+                        <button className='mailList-btn'>JOIN</button>
                     </div>
                     <span>By signing up you agree with our <Link href={'/'}>privacy policy</Link> and <Link href={'/'}>terms & conditions</Link>.</span>
                 </div>
